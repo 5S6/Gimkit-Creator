@@ -1,9 +1,9 @@
 # Gimkit-Creator
-Why The Fuck Did I Make This
+Why The Fuck Did I Make This 😭
 
 ---
 
-# Config
+# Configs
 
 | Config Variable | Explanation | 
 | --- | --- | 
