@@ -25,3 +25,13 @@ Creates Teacher Gimkit Accounts
 | LastName | Accounts Last Name |
 | Password | Accounts Password | 
 | DateOfBirth | Accounts Birthday | 
+
+---
+
+# Commands
+
+| Command | Command | 
+| --- | --- | 
+| Student Account | *python3 Student.py* | 
+| Teacher | *python3 Teacher.py* | 
+
