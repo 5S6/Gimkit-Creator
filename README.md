@@ -7,7 +7,7 @@ Why The Fuck Did I Make This
 
 | Config Variable | Explanation | 
 | --- | --- | 
-| AccountType | Student Or Teacher | 
+| AccountType | Student Or Educator | 
 | AreaOfExpertise | Subject | 
 | Country | Accounts Country |
 | Email | Accounts Email | 
