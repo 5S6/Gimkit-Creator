@@ -23,5 +23,5 @@ Why The Fuck Did I Make This
 | Command | Command | 
 | --- | --- | 
 | Student Account | *python3 Student.py* | 
-| Teacher | *python3 Teacher.py* | 
+| Teacher Account | *python3 Teacher.py* | 
 
