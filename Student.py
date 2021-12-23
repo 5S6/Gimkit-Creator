@@ -5,8 +5,9 @@ import time
 import threading
 import json
 
-tokenFile = open("tokens.txt", "w")
-idFile = open("ids.txt", "w")
+tokenFile = open("Student/[Results]/tokens.txt", "w")
+idFile = open("Student/[Results]/ids.txt", "w")
+comboFile = open("Student/[Results]/combos.txt", "w")
 
 def namegen():
     length = random.randint(7, 15) #set your min and max (min, max)
@@ -18,7 +19,8 @@ def namegen():
 
 def SignUp():
     link = "https://www.gimkit.com/api/register"
-
+    email = namegen() + "@gmail.com"
+    pass_gen = "AlekCodes" + namegen()
     data = {
     "accountType": "student",
     "areaOfExpertise": "",
@@ -26,19 +28,24 @@ def SignUp():
     "country": "",
     "dateOfBirth": "",
     "districtId" : "" ,
-    "email": namegen()+"@gmail.com",
+    "email": email,
     "firstName": namegen(),
     "googleToken": "",
     "gradeLevel": "",
-    "groupJoining": "",
+    "groupJoining": "61c3dbf9751f6800233d78fa",
     "guardianEmail": "",
     "lastName": "r",
     "organization": "",
-    "password": namegen(),
+    "password": pass_gen,
     "schoolId": ""
     }
     signup = requests.post(link,data)
     print(signup.text)
+    token = json.loads(signup.text)
+    tokenFile.write(token['token']+ "\n")
+    id = json.loads(signup.text)
+    idFile.write(id['_id']+ "\n")
+    comboFile.write(email + ":" + pass_gen + "\n")
 
 threads=[]
 
@@ -54,4 +61,3 @@ for i in range(100000):
 
 for i in range(100000):
   threads[i].join()
-
