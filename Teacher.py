@@ -7,6 +7,9 @@ import json
 tokenFile = open("Teacher/[Results]/tokens.txt", "w")
 idFile = open("Teacher/[Results]/ids.txt", "w")
 comboFile = open("Teacher/[Results]/combos.txt", "w")
+prefix = input("Account Names: ")
+last_prefix = input("Account Last Names: ")
+
 
 def namegen():
     length = random.randint(7, 15) #set your min and max (min, max)
@@ -28,12 +31,12 @@ def SignUp():
     "dateOfBirth": "",
     "districtId": "",
     "email": email,
-    "firstName": namegen(),
+    "firstName": prefix,
     "googleToken": "",
     "gradeLevel": "High School",
     "groupJoining": "",
     "guardianEmail": "",
-    "lastName": namegen(),
+    "lastName": last_prefix,
     "organization": "",
     "password": pass_gen,
     "schoolId": ""
