@@ -52,7 +52,7 @@ def SignUp():
     "country": "US",
     "dateOfBirth": "",
     "districtId": "",
-    "email": email,
+    "email": final_email,
     "firstName": prefix,
     "googleToken": "",
     "gradeLevel": "High School",
