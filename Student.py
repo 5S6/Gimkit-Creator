@@ -68,7 +68,7 @@ def SignUp():
     tokenFile.write(token['token']+ "\n")
     id = json.loads(signup.text)
     idFile.write(id['_id']+ "\n")
-    comboFile.write(email + ":" + pass_gen + "\n")
+    comboFile.write(final_email + ":" + pass_gen + "\n")
 
 threads=[]
 
