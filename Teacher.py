@@ -4,6 +4,28 @@ import time
 import threading
 import json
 
+
+print("""
+  ________.__         __   .__  __    _________                        __                
+ /  _____/|__| _____ |  | _|__|/  |_  \_   ___ \_______   ____ _____ _/  |_  ___________ 
+/   \  ___|  |/     \|  |/ /  \   __\ /    \  \/\_  __ \_/ __ \\__  \\   __\/  _ \_  __ \
+\    \_\  \  |  Y Y  \    <|  ||  |   \     \____|  | \/\  ___/ / __ \|  | (  <_> )  | \/
+ \______  /__|__|_|  /__|_ \__||__|    \______  /|__|    \___  >____  /__|  \____/|__|   
+        \/         \/     \/                  \/             \/     \/                  
+""")
+
+print("By Alek#0001")
+
+email_gen = input("Custom Email Names? (Y/N)")
+if email_gen == "Y":
+    final_email = input("Email Prefix: ") + namegen() + "@gmail.com"
+if email_gen == "N":
+    final_email = namegen() + "@gmail.com
+if email_gen == "y":
+    final_email = input("Email Prefix: ") + namegen() + "@gmail.com"
+if email_gen == "n":
+    final_email = namegen() + "@gmail.com
+    
 tokenFile = open("Teacher/[Results]/tokens.txt", "w")
 idFile = open("Teacher/[Results]/ids.txt", "w")
 comboFile = open("Teacher/[Results]/combos.txt", "w")
